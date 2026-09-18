@@ -68,6 +68,175 @@ const estudantes = [
         tags: ["JS", "API"],
         linkedin: "https://www.linkedin.com/",
     },
+
+
+
+
+
+    {
+        nome: "DÉBORA VITÓRIA",
+        papel: "Fã de Flexbox",
+        bio: "Descobriu que Grid resolve 90% dos problemas que o Flexbox criou. Ainda ama os dois.",
+        tags: ["CSS", "Figma", "Grid"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "EFRAIM FLAVIO",
+        papel: "Debugger profissional",
+        bio: "Passa mais tempo no console.log() do que no editor, mas sempre acha o bug.",
+        tags: ["JS", "Git", "VS Code"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "EMMANUEL HENRIQUE",
+        papel: "Componentizadora",
+        bio: "Se puder virar componente, ela componentiza. Mestra em reaproveitar código.",
+        tags: ["React", "UI"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "FÁBIO ARAÚJO",
+        papel: "Caçador de pixels",
+        bio: "Não dorme enquanto o layout não bate 1:1 com o Figma.",
+        tags: ["CSS", "Figma"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "JOÃO ARTHUR",
+        papel: "Chefe do Git",
+        bio: "A única que nunca deu force push na branch errada (ainda).",
+        tags: ["Git", "GitHub"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "JOSUÉ LUIZ",
+        papel: "Animador nato",
+        bio: "Toda página que passa por ele ganha uma transição suave a mais.",
+        tags: ["CSS", "JS"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "JOYCE KELLY",
+        papel: "Acessibilidade first",
+        bio: "Testa tudo com o teclado antes de considerar o projeto pronto.",
+        tags: ["HTML", "a11y"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "LETÍCIA ROSA",
+        papel: "Fetcheiro de API",
+        bio: "Consome qualquer API que aparecer pela frente, só pra ver o JSON.",
+        tags: ["JS", "API"],
+        linkedin: "https://www.linkedin.com/",
+    },
+
+
+
+
+    {
+        nome: "LUIZ FELIPE",
+        papel: "Fã de Flexbox",
+        bio: "Descobriu que Grid resolve 90% dos problemas que o Flexbox criou. Ainda ama os dois.",
+        tags: ["CSS", "Figma", "Grid"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "MARIA EDUARDA",
+        papel: "Debugger profissional",
+        bio: "Passa mais tempo no console.log() do que no editor, mas sempre acha o bug.",
+        tags: ["JS", "Git", "VS Code"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "MATHEUS BEZERRA ",
+        papel: "Componentizadora",
+        bio: "Se puder virar componente, ela componentiza. Mestra em reaproveitar código.",
+        tags: ["React", "UI"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "MATHEUS GUILHERME",
+        papel: "Caçador de pixels",
+        bio: "Não dorme enquanto o layout não bate 1:1 com o Figma.",
+        tags: ["CSS", "Figma"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "NICOLAS KLAYVERT",
+        papel: "Chefe do Git",
+        bio: "A única que nunca deu force push na branch errada (ainda).",
+        tags: ["Git", "GitHub"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "PEDRO FELIPE",
+        papel: "Animador nato",
+        bio: "Toda página que passa por ele ganha uma transição suave a mais.",
+        tags: ["CSS", "JS"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "RAFFAELA GALDINO",
+        papel: "Acessibilidade first",
+        bio: "Testa tudo com o teclado antes de considerar o projeto pronto.",
+        tags: ["HTML", "a11y"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "RAY ENIO",
+        papel: "Fetcheiro de API",
+        bio: "Consome qualquer API que aparecer pela frente, só pra ver o JSON.",
+        tags: ["JS", "API"],
+        linkedin: "https://www.linkedin.com/",
+    },
+
+
+
+    {
+        nome: "THIAGO FILIPE",
+        papel: "Fã de Flexbox",
+        bio: "Descobriu que Grid resolve 90% dos problemas que o Flexbox criou. Ainda ama os dois.",
+        tags: ["CSS", "Figma", "Grid"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "VITOR GABRIEL",
+        papel: "Debugger profissional",
+        bio: "Passa mais tempo no console.log() do que no editor, mas sempre acha o bug.",
+        tags: ["JS", "Git", "VS Code"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "WILTON GABRIEL",
+        papel: "Componentizadora",
+        bio: "Se puder virar componente, ela componentiza. Mestra em reaproveitar código.",
+        tags: ["React", "UI"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "YAN MATHEUS",
+        papel: "Caçador de pixels",
+        bio: "Não dorme enquanto o layout não bate 1:1 com o Figma.",
+        tags: ["CSS", "Figma"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "YANA CLARA",
+        papel: "Chefe do Git",
+        bio: "A única que nunca deu force push na branch errada (ainda).",
+        tags: ["Git", "GitHub"],
+        linkedin: "https://www.linkedin.com/",
+    },
+    {
+        nome: "YANCO VINICIUS",
+        papel: "Animador nato",
+        bio: "Toda página que passa por ele ganha uma transição suave a mais.",
+        tags: ["CSS", "JS"],
+        linkedin: "https://www.linkedin.com/",
+    },
+
+
+
 ];
 
 /* Cores oficiais do portfólio, usadas em rodízio nos post-its */
