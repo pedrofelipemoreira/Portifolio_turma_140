@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Mural da Turma 140 do curso Transforme-se Front-end.">
+
+    <title>Mural da Turma | Turma 140</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Elementos decorativos -->
+    <div class="noise"></div>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+
+        <a href="index.html#inicio" class="logo">
+            <span class="logo-number">140</span>
+
+            <span class="logo-text">
+                FRONT-END<br>
+            </span>
+        </a>
+
+        <nav class="navigation" aria-label="Menu principal">
+            <a href="index.html#quem-somos">Quem somos</a>
+            <a href="index.html#turma">A turma</a>
+            <a href="index.html#docente">Docente</a>
+            <a href="index.html#curso">Curso</a>
+            <a href="index.html#galeria">Galeria</a>
+        </nav>
+
+        <a href="index.html#galeria" class="header-button">
+            <i class="fa-solid fa-arrow-left"></i>
+            Voltar ao portfólio
+        </a>
+
+    </header>
+
+    <main>
+
+        <!-- Hero do mural -->
+        <section class="section mural-hero" id="mural-inicio">
+
+            <div class="section-number">★</div>
+
+            <div class="section-heading" style="text-align: center; margin: 0 auto;">
+
+                <span class="eyebrow" style="justify-content: center;">
+                    Bônus da turma 140
+                </span>
+
+                <h2>
+                    MURAL DA<br>
+                    <span>TURMA</span>
+                </h2>
+
+            </div>
+
+            <p class="mural-intro">
+                Cada post-it é uma pessoa da nossa turma. Clique em qualquer
+                um para virar o cartão, ler o crachá completo e conferir o
+                LinkedIn.
+            </p>
+
+        </section>
+
+        <!-- Corkboard -->
+        <section class="section mural-board">
+
+            <div class="corkboard">
+
+                <div class="postit-grid" id="postitGrid">
+                    <!-- Gerado via JavaScript a partir do array "estudantes" -->
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <strong>140</strong>
+            <span>Front-end</span>
+        </div>
+
+        <p>
+            Portfólio desenvolvido pela Turma 140.
+        </p>
+
+        <div class="footer-information">
+            <span>Transforme-se</span>
+            <span>Front-end</span>
+            <span>2026</span>
+        </div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./mural.js"></script>
+
+</body>
+
+</html>
