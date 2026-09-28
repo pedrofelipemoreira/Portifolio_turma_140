@@ -9,64 +9,81 @@
 
    Para adicionar/remover uma pessoa, basta copiar um objeto
    do array e editar os campos.
+
+   FOTO DO CRACHÁ:
+   Em cada aluno existe o campo  foto: ""
+   Basta colocar o caminho (ou URL) da imagem, por exemplo:
+       foto: "./assets/images/mural/antonio-cezar.jpg"
+   Se ficar vazio (ou a imagem não carregar), o crachá mostra
+   automaticamente as iniciais do aluno no lugar da foto.
+   Dica: use fotos de rosto, de preferência na vertical ou
+   quadradas (o site já recorta e centraliza sozinho).
 ===================================================== */
 
 const estudantes = [
     {
         nome: "Antonio Cézar",
-        papel: "Fã de Flexbox",
-        bio: "Descobriu que Grid resolve 90% dos problemas que o Flexbox criou. Ainda ama os dois.",
+        foto: "./assets/images/cracha/antonio_cezar.jpeg",
+        papel: "",
+        bio: "",
         tags: ["CSS", "Figma", "Grid"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "Arthur Henrique",
-        papel: "Debugger profissional",
-        bio: "Passa mais tempo no console.log() do que no editor, mas sempre acha o bug.",
+        foto: "./assets/images/cracha/arthur_henrrique.jpeg",
+        papel: "",
+        bio: "",
         tags: ["JS", "Git", "VS Code"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "Carlos Eduardo",
-        papel: "Componentizadora",
-        bio: "Se puder virar componente, ela componentiza. Mestra em reaproveitar código.",
+        foto: "./assets/images/cracha/carlos_eduardo.jpeg",
+        papel: "",
+        bio: "",
         tags: ["React", "UI"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "Calebe de Araujo",
-        papel: "Caçador de pixels",
-        bio: "Não dorme enquanto o layout não bate 1:1 com o Figma.",
+        foto: "./assets/images/cracha/calebe_araujo.jpeg",
+        papel: "",
+        bio: "",
         tags: ["CSS", "Figma"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "Cecília Souza",
-        papel: "Chefe do Git",
-        bio: "A única que nunca deu force push na branch errada (ainda).",
-        tags: ["Git", "GitHub"],
-        linkedin: "https://www.linkedin.com/",
+        foto: "./assets/images/cracha/cecilia_souza.jpeg",
+        papel: "Design / UI/UX",
+        bio: "Descobriu que criar um Design System resolve 90% dos problemas que o 'layout livre' criou. Ainda ama a liberdade de rabiscar.",
+        tags: ["Figma", "Ilustrator", "Canva"],
+        linkedin: "https://www.linkedin.com/in/cecília-de-souza-32b457369/",
     },
     {
         nome: "Clistian Jose",
-        papel: "Animador nato",
-        bio: "Toda página que passa por ele ganha uma transição suave a mais.",
-        tags: ["CSS", "JS"],
+        foto: "./assets/images/cracha/clistian_jose.jpeg",
+        papel: "Q.A. (Quality Assurance)",
+        bio: "Descobriu que automatizar os testes resolve 90% dos problemas que o teste manual não dava conta. Ainda ama achar bug em produção.",
+        tags: ["Cypress / Playwright", "Postman"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "Daniel Pereira",
-        papel: "Acessibilidade first",
-        bio: "Testa tudo com o teclado antes de considerar o projeto pronto.",
+        foto: "./assets/images/cracha/daniel_pereira.jpeg",
+        papel: "",
+        bio: "",
         tags: ["HTML", "a11y"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "Dayseane Karla",
-        papel: "Fetcheiro de API",
-        bio: "Consome qualquer API que aparecer pela frente, só pra ver o JSON.",
+        foto: "./assets/images/cracha/dayseane_karla.jpeg",
+        papel: "",
+        bio: "",
         tags: ["JS", "API"],
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "https://www.linkedin.com/in/dayseane-prazeres-26539a302/",
     },
 
 
@@ -75,59 +92,67 @@ const estudantes = [
 
     {
         nome: "DÉBORA VITÓRIA",
-        papel: "Fã de Flexbox",
-        bio: "Descobriu que Grid resolve 90% dos problemas que o Flexbox criou. Ainda ama os dois.",
+        foto: "./assets/images/cracha/debora_vitoria.jpeg",
+        papel: "",
+        bio: "",
         tags: ["CSS", "Figma", "Grid"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "EFRAIM FLAVIO",
-        papel: "Debugger profissional",
-        bio: "Passa mais tempo no console.log() do que no editor, mas sempre acha o bug.",
+        foto: "./assets/images/cracha/efraim_flavio.jpeg",
+        papel: "",
+        bio: "",
         tags: ["JS", "Git", "VS Code"],
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "https://www.linkedin.com/in/efraim-flavio-6271a8409/",
     },
     {
         nome: "EMMANUEL HENRIQUE",
-        papel: "Componentizadora",
-        bio: "Se puder virar componente, ela componentiza. Mestra em reaproveitar código.",
-        tags: ["React", "UI"],
-        linkedin: "https://www.linkedin.com/",
+        foto: "./assets/images/cracha/emanuel_henrrique.jpeg",
+        papel: "Design / UI/UX",
+        bio: "Descobriu que regras de usabilidade estruturam o produto. Ainda ama a tela em branco e o caos controlado de um bom rascunho.",
+        tags: ["Figma", "Canva", "CSS"],
+        linkedin: "https://www.linkedin.com/in/emmanuel-henrique-a6440b399/",
     },
     {
         nome: "FÁBIO ARAÚJO",
-        papel: "Caçador de pixels",
-        bio: "Não dorme enquanto o layout não bate 1:1 com o Figma.",
+        foto: "./assets/images/cracha/fabio_araujo.jpeg",
+        papel: "",
+        bio: "",
         tags: ["CSS", "Figma"],
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "https://www.linkedin.com/in/fabiuaraujo/",
     },
     {
         nome: "JOÃO ARTHUR",
-        papel: "Chefe do Git",
-        bio: "A única que nunca deu force push na branch errada (ainda).",
-        tags: ["Git", "GitHub"],
-        linkedin: "https://www.linkedin.com/",
+        foto: "./assets/images/cracha/joao_arthur.jpeg",
+        papel: "Front-end",
+        bio: "Descobriu que aprender JavaScript puro resolve 90% dos problemas que os frameworks criaram. Ainda ama o React.",
+        tags: ["JavaScript", "React", "CSS / Tailwind"],
+        linkedin: "https://www.linkedin.com/in/arthur-albuquerque-60066b333/",
     },
     {
         nome: "JOSUÉ LUIZ",
-        papel: "Animador nato",
-        bio: "Toda página que passa por ele ganha uma transição suave a mais.",
+        foto: "./assets/images/cracha/josue_luiz.jpeg",
+        papel: "",
+        bio: "",
         tags: ["CSS", "JS"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "JOYCE KELLY",
-        papel: "Acessibilidade first",
-        bio: "Testa tudo com o teclado antes de considerar o projeto pronto.",
+        foto: "./assets/images/cracha/joyce_kelly.jpeg",
+        papel: "",
+        bio: "",
         tags: ["HTML", "a11y"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "LETÍCIA ROSA",
-        papel: "Fetcheiro de API",
-        bio: "Consome qualquer API que aparecer pela frente, só pra ver o JSON.",
+        foto: "./assets/images/cracha/leticia_rosa.jpeg",
+        papel: "",
+        bio: "",
         tags: ["JS", "API"],
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "https://www.linkedin.com/in/leticia-rosa2003/",
     },
 
 
@@ -135,102 +160,116 @@ const estudantes = [
 
     {
         nome: "LUIZ FELIPE",
-        papel: "Fã de Flexbox",
-        bio: "Descobriu que Grid resolve 90% dos problemas que o Flexbox criou. Ainda ama os dois.",
+        foto: "./assets/images/cracha/luiz_felipe.jpeg",
+        papel: "",
+        bio: "",
         tags: ["CSS", "Figma", "Grid"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "MARIA EDUARDA",
-        papel: "Debugger profissional",
-        bio: "Passa mais tempo no console.log() do que no editor, mas sempre acha o bug.",
+        foto: "./assets/images/cracha/maria_eduarda.jpeg",
+        papel: "",
+        bio: "",
         tags: ["JS", "Git", "VS Code"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "MATHEUS BEZERRA ",
-        papel: "Componentizadora",
-        bio: "Se puder virar componente, ela componentiza. Mestra em reaproveitar código.",
-        tags: ["React", "UI"],
+        foto: "./assets/images/cracha/matheus_bezerra.jpeg",
+        papel: "Frpmt-End",
+        bio: "Descobriu que tipar tudo com TypeScript resolve 90% dos problemas que os erros em tempo de execução e undefined criaram. Aindaama ver a interface ganhando vida na tela.",
+        tags: ["React_native", "TypeScript", "Tailwind CSS"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "MATHEUS GUILHERME",
-        papel: "Caçador de pixels",
-        bio: "Não dorme enquanto o layout não bate 1:1 com o Figma.",
-        tags: ["CSS", "Figma"],
-        linkedin: "https://www.linkedin.com/",
+        foto: "./assets/images/cracha/matheus_guilherme.jpeg",
+        papel: "Back-End",
+        bio: "Descobriu que otimizar as queries do banco resolve 90% dos problemas que a arquitetura de microserviços criou. Ainda ama criar APIs.",
+        tags: ["Node.js", "postegreSQL", "Java"],
+        linkedin: "https://www.linkedin.com/in/matheus-guilherme4/",
     },
     {
         nome: "NICOLAS KLAYVERT",
-        papel: "Chefe do Git",
-        bio: "A única que nunca deu force push na branch errada (ainda).",
+        foto: "./assets/images/cracha/nicolas_klayvert.jpeg",
+        papel: "",
+        bio: "",
         tags: ["Git", "GitHub"],
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "https://www.linkedin.com/in/nicolas-klayvert/",
     },
     {
         nome: "PEDRO FELIPE",
-        papel: "Animador nato",
-        bio: "Toda página que passa por ele ganha uma transição suave a mais.",
-        tags: ["CSS", "JS"],
-        linkedin: "https://www.linkedin.com/",
+        foto: "./assets/images/cracha/pedro_felipe.jpeg",
+        papel: "Full-stack",
+        bio: "Descobriu que tratar o estado no frontend resolve 90% dos problemas de re-renderização que o React criou. Ainda ama subir APIs e ver a tela renderizar sem bug.",
+        tags: ["Node.js", "Mongodb", "React"],
+        linkedin: "https://www.linkedin.com/in/pedrofelipemoreira/",
     },
     {
         nome: "RAFFAELA GALDINO",
-        papel: "Acessibilidade first",
-        bio: "Testa tudo com o teclado antes de considerar o projeto pronto.",
-        tags: ["HTML", "a11y"],
-        linkedin: "https://www.linkedin.com/",
+        foto: "./assets/images/cracha/raffaela_galdinho.jpeg",
+        papel: "Docuemntação",
+        bio: "Resolvendo 90% dos ruídos de produto com jornadas visuais no Miro e UX Docs bem estruturados. Apaixonado por transformar processos complexos em fluxos simples.",
+        tags: ["Miro", "Docs"],
+        linkedin: "https://www.linkedin.com/in/raffaela-galdino-thorpe-b461522a9/",
     },
     {
         nome: "RAY ENIO",
-        papel: "Fetcheiro de API",
-        bio: "Consome qualquer API que aparecer pela frente, só pra ver o JSON.",
-        tags: ["JS", "API"],
-        linkedin: "https://www.linkedin.com/",
+        foto: "./assets/images/cracha/ray_enio.jpeg",
+        papel: "Q.A. (Quality Assurance)",
+        bio: "Gosta de encontrar problemas antes que eles cheguem ao usuário. Curioso, atento aos detalhes e sempre buscando aprender novas formas de testar, identificar bugs e melhorar a qualidade dos sistemas.",
+        tags: ["Vitest", "Postman", "Jest / Cypress"],
+        linkedin: "https://www.linkedin.com/in/ray-enio-528282412/",
     },
 
 
 
     {
         nome: "THIAGO FILIPE",
-        papel: "Fã de Flexbox",
-        bio: "Descobriu que Grid resolve 90% dos problemas que o Flexbox criou. Ainda ama os dois.",
+        foto: "./assets/images/cracha/thiago_felipe.jpeg",
+        papel: "",
+        bio: "",
         tags: ["CSS", "Figma", "Grid"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "VITOR GABRIEL",
-        papel: "Debugger profissional",
-        bio: "Passa mais tempo no console.log() do que no editor, mas sempre acha o bug.",
+        foto: "./assets/images/cracha/vitor_gabriel.jpeg",
+        papel: "",
+        bio: "",
         tags: ["JS", "Git", "VS Code"],
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "https://www.linkedin.com/in/vitor-gabriel-b71b6633b/",
     },
     {
         nome: "WILTON GABRIEL",
-        papel: "Componentizadora",
-        bio: "Se puder virar componente, ela componentiza. Mestra em reaproveitar código.",
+        foto: "./assets/images/cracha/wilton_gabriel.jpeg",
+        papel: "",
+        bio: "",
         tags: ["React", "UI"],
         linkedin: "https://www.linkedin.com/",
     },
     {
-        nome: "YAN MATHEUS",
-        papel: "Caçador de pixels",
-        bio: "Não dorme enquanto o layout não bate 1:1 com o Figma.",
+        nome: "YAN MATHEUS (shoyu)",
+        foto: "./assets/images/cracha/yan_mathues.jpeg",
+        papel: "",
+        bio: "",
         tags: ["CSS", "Figma"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "YANA CLARA",
-        papel: "Chefe do Git",
-        bio: "A única que nunca deu force push na branch errada (ainda).",
-        tags: ["Git", "GitHub"],
+        foto: "./assets/images/cracha/yana_clara.jpeg",
+        papel: "Design / Cybersecurity",
+        bio: "Gosta de transformar ideias em algo visual , ao mesmo tempo, explorar o universo da segurança digital e entender como proteger a tecnologia por trás de tudo.",
+        tags: ["Canva", "Figma", "NMAP"],
         linkedin: "https://www.linkedin.com/",
     },
     {
         nome: "YANCO VINICIUS",
-        papel: "Animador nato",
-        bio: "Toda página que passa por ele ganha uma transição suave a mais.",
+        foto: "./assets/images/cracha/yanco_vinicius.jpeg",
+        papel: "",
+        bio: "",
         tags: ["CSS", "JS"],
         linkedin: "https://www.linkedin.com/",
     },
@@ -244,11 +283,28 @@ const coresPostit = ["postit-color-1", "postit-color-2", "postit-color-3", "post
 
 function iniciais(nome) {
     return nome
-        .split(" ")
+        .trim()
+        .split(/\s+/)
         .map((palavra) => palavra[0])
         .slice(0, 2)
         .join("")
         .toUpperCase();
+}
+
+/* Monta o espaço da foto: usa <img> se houver url, senão as iniciais */
+function montarFoto(pessoa, classe) {
+    const ini = iniciais(pessoa.nome);
+
+    if (!pessoa.foto) {
+        return `<div class="${classe} is-empty"><span class="badge-initials">${ini}</span></div>`;
+    }
+
+    return `
+        <div class="${classe}">
+            <img src="${pessoa.foto}" alt="Foto de ${pessoa.nome.trim()}" loading="lazy">
+            <span class="badge-initials">${ini}</span>
+        </div>
+    `;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -267,16 +323,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 <span class="postit-pin"></span>
 
+                <!-- FRENTE: crachá -->
                 <div class="postit-face postit-front">
-                    <div class="postit-avatar">${iniciais(pessoa.nome)}</div>
-                    <div>
-                        <h3>${pessoa.nome}</h3>
+
+                    <div class="badge-head">
+                        <span>Turma 140</span>
+                        <span>Front-end</span>
+                    </div>
+
+                    ${montarFoto(pessoa, "badge-photo")}
+
+                    <div class="badge-info">
+                        <h3>${pessoa.nome.trim()}</h3>
                         <span class="role">${pessoa.papel}</span>
                     </div>
-                    <span class="tap">virar &rarr;</span>
+
+                    <div class="badge-foot">
+                        <span class="badge-barcode" aria-hidden="true"></span>
+                        <span class="tap">virar &rarr;</span>
+                    </div>
+
                 </div>
 
+                <!-- VERSO: sobre + LinkedIn -->
                 <div class="postit-face postit-back">
+
+                    <div class="badge-mini">
+                        ${montarFoto(pessoa, "badge-mini-photo")}
+                        <div>
+                            <strong>${pessoa.nome.trim()}</strong>
+                            <span>${pessoa.papel}</span>
+                        </div>
+                    </div>
+
                     <div>
                         <span class="label">Sobre</span>
                         <p class="bio">${pessoa.bio}</p>
@@ -284,15 +363,25 @@ document.addEventListener("DOMContentLoaded", () => {
                             ${pessoa.tags.map((tag) => `<span>${tag}</span>`).join("")}
                         </div>
                     </div>
+
                     <a class="postit-linkedin" href="${pessoa.linkedin}" target="_blank"
-                        rel="noopener noreferrer" aria-label="LinkedIn de ${pessoa.nome}">
+                        rel="noopener noreferrer" aria-label="LinkedIn de ${pessoa.nome.trim()}">
                         <i class="fa-brands fa-linkedin"></i>
                         LinkedIn
                     </a>
+
                 </div>
 
             </div>
         `;
+
+        /* Se a foto não carregar, remove o <img> e sobram as iniciais */
+        postit.querySelectorAll(".badge-photo img, .badge-mini-photo img").forEach((img) => {
+            img.addEventListener("error", () => {
+                img.parentElement.classList.add("is-empty");
+                img.remove();
+            });
+        });
 
         /* Clique no post-it vira o cartão, exceto se o clique for no botão do LinkedIn */
         postit.addEventListener("click", (event) => {
