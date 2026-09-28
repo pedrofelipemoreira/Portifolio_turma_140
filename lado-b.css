@@ -1,0 +1,1033 @@
+/* =====================================================
+   LADO B — PÁGINA SECRETA DA TURMA 140
+
+   Usa as variáveis, fontes e componentes do style.css.
+   A ideia: o mesmo site, mas "virado do avesso" —
+   fundo preto, sombras amarelas/vermelhas, visor de
+   câmera, fitas de vídeo e fotos coladas na parede.
+===================================================== */
+
+body.lado-b {
+    background: var(--black);
+    color: var(--white);
+}
+
+.lado-b .noise {
+    opacity: 0.09;
+}
+
+:focus-visible {
+    outline: 3px solid var(--yellow);
+    outline-offset: 3px;
+}
+
+
+/* ---------- Cabeçalho (versão escura) ---------- */
+
+.lado-b .header {
+    background: rgba(11, 11, 11, 0.92);
+    border-bottom-color: var(--yellow);
+    color: var(--white);
+}
+
+.lado-b .navigation a::after {
+    background: var(--yellow);
+}
+
+.lado-b .header-button {
+    background: var(--yellow);
+    color: var(--black);
+    border-color: var(--yellow);
+}
+
+.lado-b .header-button:hover {
+    background: var(--red);
+    color: var(--white);
+    border-color: var(--red);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.b-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 5% 80px;
+    background:
+        linear-gradient(rgba(244, 241, 233, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(244, 241, 233, 0.06) 1px, transparent 1px),
+        var(--black);
+    background-size: 45px 45px;
+    overflow: hidden;
+}
+
+/* Inverte as formas do hero do lado A: lá o círculo cheio era vermelho e o anel amarelo */
+.b-hero::before {
+    content: "";
+    position: absolute;
+    top: 130px;
+    right: -80px;
+    width: 310px;
+    height: 310px;
+    background: var(--yellow);
+    border-radius: 50%;
+}
+
+.b-hero::after {
+    content: "";
+    position: absolute;
+    bottom: -130px;
+    left: -100px;
+    width: 350px;
+    height: 350px;
+    border: 65px solid var(--red);
+    border-radius: 50%;
+}
+
+/* ---------- Visor de câmera ---------- */
+
+.b-viewfinder {
+    position: absolute;
+    inset: 100px 22px 24px;
+    z-index: 2;
+    pointer-events: none;
+    font-family: var(--mono-font);
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.vf-corner {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 0 solid var(--white);
+    opacity: 0.85;
+}
+
+.vf-tl {
+    top: 0;
+    left: 0;
+    border-top-width: 3px;
+    border-left-width: 3px;
+}
+
+.vf-tr {
+    top: 0;
+    right: 0;
+    border-top-width: 3px;
+    border-right-width: 3px;
+}
+
+.vf-bl {
+    bottom: 0;
+    left: 0;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
+
+.vf-br {
+    bottom: 0;
+    right: 0;
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+}
+
+.vf-rec,
+.vf-tr-info,
+.vf-bl-info,
+.vf-br-info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px;
+}
+
+.vf-rec {
+    top: 14px;
+    left: 18px;
+}
+
+.vf-rec i {
+    width: 11px;
+    height: 11px;
+    background: var(--red);
+    border-radius: 50%;
+    animation: rec-blink 1.2s steps(1) infinite;
+}
+
+.vf-tr-info {
+    top: 14px;
+    right: 18px;
+}
+
+.vf-bl-info {
+    bottom: 14px;
+    left: 18px;
+}
+
+.vf-br-info {
+    bottom: 14px;
+    right: 18px;
+    color: var(--yellow);
+}
+
+@keyframes rec-blink {
+
+    0%,
+    55% {
+        opacity: 1;
+    }
+
+    56%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ---------- Título ---------- */
+
+.b-hero-tag {
+    position: relative;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 9px 14px;
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 0.72rem;
+    font-weight: 800;
+    transform: rotate(-2deg);
+}
+
+.b-hero-tag span {
+    width: 9px;
+    height: 9px;
+    background: var(--red);
+    border-radius: 50%;
+}
+
+.b-title {
+    position: relative;
+    z-index: 3;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.b-line-outline,
+.b-line-main {
+    font-family: var(--title-font);
+    line-height: 0.8;
+}
+
+.b-line-outline {
+    align-self: flex-start;
+    color: transparent;
+    font-size: clamp(6rem, 16vw, 14rem);
+    -webkit-text-stroke: 3px var(--white);
+}
+
+/* O "B" é o momento que a página guarda: sombra amarela e vermelha
+   (a mesma do "140" do lado A) que de vez em quando "treme" */
+.b-line-main {
+    align-self: flex-end;
+    margin-top: -10px;
+    color: var(--white);
+    font-size: clamp(8rem, 24vw, 20rem);
+    text-shadow:
+        8px 8px 0 var(--yellow),
+        14px 14px 0 var(--red);
+    animation: glitch 6s infinite;
+    cursor: pointer;
+}
+
+.b-line-main.is-glitching {
+    animation: glitch-fast 0.45s steps(2) 1;
+}
+
+@keyframes glitch {
+
+    0%,
+    91%,
+    100% {
+        transform: none;
+        text-shadow: 8px 8px 0 var(--yellow), 14px 14px 0 var(--red);
+    }
+
+    92% {
+        transform: translateX(-6px) skewX(-5deg);
+        text-shadow: -8px 0 0 var(--yellow), 8px 0 0 var(--red);
+    }
+
+    94% {
+        transform: translateX(6px) skewX(4deg);
+        text-shadow: 8px 0 0 var(--yellow), -8px 0 0 var(--red);
+    }
+
+    96% {
+        transform: translateX(-3px);
+        text-shadow: 3px 8px 0 var(--yellow), -3px 14px 0 var(--red);
+    }
+}
+
+@keyframes glitch-fast {
+
+    0% {
+        transform: translateX(-10px) skewX(-8deg);
+        text-shadow: -12px 0 0 var(--yellow), 12px 0 0 var(--red);
+    }
+
+    50% {
+        transform: translateX(10px) skewX(6deg);
+        text-shadow: 12px 0 0 var(--yellow), -12px 0 0 var(--red);
+    }
+
+    100% {
+        transform: none;
+        text-shadow: 8px 8px 0 var(--yellow), 14px 14px 0 var(--red);
+    }
+}
+
+.b-line-small {
+    align-self: center;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background: var(--orange);
+    color: var(--black);
+    font-family: var(--secondary-font);
+    font-size: clamp(1.4rem, 4vw, 3.8rem);
+    line-height: 1;
+    transform: rotate(-2deg);
+}
+
+.b-hero-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    max-width: 860px;
+    margin-top: 45px;
+}
+
+.b-hero-description {
+    max-width: 480px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.b-hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+/* Botões */
+
+.b-primary {
+    box-shadow: 5px 5px 0 var(--yellow);
+    border-color: var(--white);
+}
+
+.b-primary:hover {
+    box-shadow: 0 0 0 var(--yellow);
+}
+
+.b-primary-light {
+    background: var(--black);
+    box-shadow: 5px 5px 0 var(--white);
+}
+
+.b-primary-light:hover {
+    box-shadow: 0 0 0 var(--white);
+}
+
+.b-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background: transparent;
+    color: var(--white);
+    border: 2px dashed var(--white);
+    font-family: var(--text-font);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.b-ghost:hover {
+    background: var(--white);
+    color: var(--black);
+    transform: rotate(-2deg);
+}
+
+.b-ghost-light {
+    border-color: var(--white);
+}
+
+/* Adesivos */
+
+.b-stickers {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.b-sticker {
+    position: absolute;
+    padding: 12px 17px;
+    color: var(--black);
+    border: 2px solid var(--black);
+    box-shadow: 4px 4px 0 var(--white);
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.b-sticker-1 {
+    top: 22%;
+    right: 17%;
+    background: var(--orange);
+    transform: rotate(9deg);
+}
+
+.b-sticker-2 {
+    bottom: 18%;
+    right: 9%;
+    background: var(--yellow);
+    font-size: 1.3rem;
+    transform: rotate(-10deg);
+}
+
+.b-sticker-3 {
+    top: 46%;
+    right: 3%;
+    background: var(--white);
+    transform: rotate(4deg);
+}
+
+
+/* =====================================================
+   FAIXA
+===================================================== */
+
+.b-marquee {
+    background: var(--yellow);
+    color: var(--black);
+    border-color: var(--black);
+}
+
+.b-marquee .marquee-content i {
+    color: var(--red);
+}
+
+
+/* =====================================================
+   SEÇÕES
+===================================================== */
+
+.b-section {
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+.b-section-intro {
+    max-width: 520px;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.7;
+    color: var(--light-gray);
+}
+
+.b-section-intro-dark {
+    color: #2a2a2a;
+}
+
+
+/* =====================================================
+   FITAS (VÍDEOS)
+===================================================== */
+
+.b-tapes {
+    background:
+        radial-gradient(circle, rgba(244, 241, 233, 0.12) 1.4px, transparent 1.4px),
+        var(--soft-black);
+    background-size: 22px 22px;
+}
+
+.tape-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px 50px;
+    margin-top: 70px;
+}
+
+.tape-card {
+    width: 300px;
+    background: var(--black);
+    border: 3px solid var(--white);
+    box-shadow: 10px 10px 0 var(--red);
+    transition: transform 0.3s ease;
+}
+
+.tape-card.is-horizontal {
+    width: 540px;
+}
+
+.tape-card:nth-child(4n + 1) {
+    transform: rotate(-1.5deg);
+}
+
+.tape-card:nth-child(4n + 2) {
+    transform: rotate(1.2deg);
+    box-shadow: 10px 10px 0 var(--yellow);
+}
+
+.tape-card:nth-child(4n + 3) {
+    transform: rotate(-1deg);
+    box-shadow: 10px 10px 0 var(--orange);
+}
+
+.tape-card:nth-child(4n + 4) {
+    transform: rotate(1.6deg);
+}
+
+.tape-card:hover {
+    transform: rotate(0deg) translateY(-6px);
+}
+
+/* Etiqueta da fita */
+
+.tape-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 9px 12px;
+    background: var(--white);
+    color: var(--black);
+    border-bottom: 3px solid var(--white);
+    font-family: var(--mono-font);
+    font-size: 0.66rem;
+    font-weight: 700;
+}
+
+.tape-label b {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 0.78rem;
+}
+
+.tape-label em {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-style: normal;
+}
+
+.tape-label em::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: var(--red);
+    border-radius: 50%;
+}
+
+.tape-screen {
+    position: relative;
+    background: #000;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+}
+
+.tape-card.is-horizontal .tape-screen {
+    aspect-ratio: 16 / 9;
+}
+
+.tape-screen video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+}
+
+/* "Sem sinal": aparece enquanto o vídeo não foi colocado */
+
+.no-signal {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+    text-align: center;
+    background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 180px 180px;
+    animation: static-shift 0.5s steps(4) infinite;
+}
+
+.no-signal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 16%;
+    background: linear-gradient(90deg,
+            #f4f1e9 0 14.28%, #FAC111 0 28.56%, #33b5c4 0 42.84%, #4cc36a 0 57.12%,
+            #d43fa1 0 71.4%, #CE1F01 0 85.68%, #2b49c9 0 100%);
+}
+
+.no-signal strong {
+    position: relative;
+    padding: 8px 14px;
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 1.1rem;
+}
+
+.no-signal span {
+    position: relative;
+    padding: 4px 10px;
+    background: var(--black);
+    color: var(--yellow);
+    font-family: var(--mono-font);
+    font-size: 0.66rem;
+    font-weight: 700;
+}
+
+@keyframes static-shift {
+    0% {
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: -40px 20px;
+    }
+
+    50% {
+        background-position: 30px -30px;
+    }
+
+    75% {
+        background-position: -20px -10px;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.tape-card figcaption {
+    padding: 14px 14px 16px;
+    font-family: var(--secondary-font);
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
+
+
+/* =====================================================
+   FOTOS (POLAROIDS)
+===================================================== */
+
+.b-photos {
+    background: var(--yellow);
+    color: var(--black);
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+.b-photos .section-heading h2 span {
+    color: var(--red);
+}
+
+.polaroid-wall {
+    column-count: 4;
+    column-gap: 30px;
+    margin-top: 70px;
+}
+
+.polaroid {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 0 34px;
+    padding: 10px 10px 0;
+    break-inside: avoid;
+    background: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black);
+    box-shadow: 6px 6px 0 var(--black);
+    text-align: center;
+    cursor: pointer;
+    transform: rotate(var(--r, 0deg));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid:hover {
+    z-index: 2;
+    transform: rotate(0deg) scale(1.04);
+    box-shadow: 10px 10px 0 var(--red);
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    background: var(--black);
+    border: 2px solid var(--black);
+}
+
+.polaroid .cap {
+    display: block;
+    padding: 12px 6px 14px;
+    font-family: "Permanent Marker", "Comic Sans MS", cursive;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+/* fita adesiva */
+.polaroid::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    z-index: 2;
+    width: 84px;
+    height: 26px;
+    background: rgba(206, 31, 1, 0.75);
+    transform: translateX(-50%) rotate(var(--tape, -4deg));
+}
+
+.polaroid:nth-child(3n + 1) {
+    --r: -2.5deg;
+    --tape: -6deg;
+}
+
+.polaroid:nth-child(3n + 2) {
+    --r: 1.8deg;
+    --tape: 5deg;
+}
+
+.polaroid:nth-child(3n + 3) {
+    --r: -1deg;
+    --tape: -2deg;
+}
+
+.polaroid:nth-child(4n) {
+    --r: 2.6deg;
+}
+
+
+/* =====================================================
+   PLACAR
+===================================================== */
+
+.b-score {
+    background: var(--black);
+}
+
+.score-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 34px;
+    margin-top: 70px;
+}
+
+.b-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+    min-height: 220px;
+    padding: 26px 22px;
+    background: var(--white);
+    color: var(--black);
+    border: 3px solid var(--white);
+    box-shadow: 8px 8px 0 var(--yellow);
+}
+
+.b-stat:nth-child(1) {
+    transform: rotate(-2deg);
+}
+
+.b-stat:nth-child(2) {
+    transform: rotate(1.6deg);
+    box-shadow: 8px 8px 0 var(--red);
+}
+
+.b-stat:nth-child(3) {
+    transform: rotate(-1deg);
+    box-shadow: 8px 8px 0 var(--orange);
+}
+
+.b-stat:nth-child(4) {
+    transform: rotate(2deg);
+}
+
+.b-stat strong {
+    font-family: var(--title-font);
+    font-size: clamp(4rem, 7vw, 6rem);
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+.b-stat span {
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   FINAL
+===================================================== */
+
+.b-outro {
+    position: relative;
+    padding: 120px 5% 130px;
+    background: var(--red);
+    color: var(--white);
+    border-top: 3px solid var(--white);
+    overflow: hidden;
+}
+
+.b-outro h2 {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: var(--title-font);
+    font-size: clamp(3.4rem, 11vw, 9.5rem);
+    font-weight: 400;
+    line-height: 0.92;
+    text-align: center;
+    text-shadow: 6px 6px 0 var(--black);
+}
+
+.b-outro-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 60px;
+}
+
+
+/* =====================================================
+   AVISO E CONFETE
+===================================================== */
+
+#confetti {
+    position: fixed;
+    inset: 0;
+    z-index: 400;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.b-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    z-index: 450;
+    max-width: calc(100% - 40px);
+    padding: 14px 20px;
+    background: var(--yellow);
+    color: var(--black);
+    border: 2px solid var(--black);
+    box-shadow: 5px 5px 0 var(--black);
+    font-family: var(--secondary-font);
+    font-size: 0.85rem;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 20px) rotate(-2deg);
+    transition: 0.3s ease;
+}
+
+.b-toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0) rotate(-2deg);
+}
+
+
+/* =====================================================
+   RESPONSIVO
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .polaroid-wall {
+        column-count: 3;
+    }
+
+    .score-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .b-sticker-3 {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .b-hero {
+        padding: 130px 6% 70px;
+    }
+
+    .b-hero::before {
+        top: 84px;
+        right: -70px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .b-hero::after {
+        width: 260px;
+        height: 260px;
+        border-width: 48px;
+    }
+
+    .b-viewfinder {
+        inset: 84px 10px 14px;
+    }
+
+    .vf-tr-info,
+    .vf-bl-info {
+        display: none;
+    }
+
+    .b-hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 28px;
+    }
+
+    .b-sticker-1,
+    .b-sticker-2 {
+        display: none;
+    }
+
+    .b-section {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .tape-grid {
+        margin-top: 50px;
+    }
+
+    .tape-card,
+    .tape-card.is-horizontal {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .tape-card.is-horizontal {
+        max-width: 100%;
+    }
+
+    .polaroid-wall {
+        column-count: 2;
+        column-gap: 18px;
+        margin-top: 50px;
+    }
+
+    .polaroid {
+        margin-bottom: 26px;
+    }
+
+    .polaroid .cap {
+        font-size: 0.82rem;
+    }
+
+    .score-grid {
+        gap: 26px 20px;
+        margin-top: 50px;
+    }
+
+    .b-stat {
+        min-height: 190px;
+        padding: 20px 16px;
+    }
+
+    .b-stat strong {
+        font-size: 3.4rem;
+    }
+
+    .b-stat span {
+        font-size: 0.85rem;
+    }
+
+    .b-outro {
+        padding: 90px 6% 100px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .b-hero-actions {
+        width: 100%;
+    }
+
+    .b-hero-actions .primary-button,
+    .b-hero-actions .b-ghost {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .b-outro-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .b-outro-actions .primary-button,
+    .b-outro-actions .b-ghost {
+        justify-content: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .b-line-main,
+    .b-line-main.is-glitching,
+    .no-signal,
+    .vf-rec i {
+        animation: none;
+    }
+
+    .tape-card,
+    .polaroid,
+    .b-toast,
+    .b-ghost {
+        transition: none;
+    }
+}

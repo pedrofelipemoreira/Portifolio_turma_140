@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Página secreta: fora dos buscadores -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Lado B | Turma 140</title>
+
+    <!-- Fontes (as mesmas do site + uma letra de caneta pras legendas) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS do site + CSS do Lado B -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./lado-b.css">
+</head>
+
+<body class="lado-b">
+
+    <div class="noise"></div>
+
+    <!-- Confete (desenhado pelo lado-b.js) -->
+    <canvas id="confetti" aria-hidden="true"></canvas>
+
+    <!-- Aviso rápido (aparece com o botão "não clique") -->
+    <div class="b-toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+
+        <a href="index.html#inicio" class="logo" aria-label="Voltar para o início do portfólio">
+            <span class="logo-number">140</span>
+            <span class="logo-text">
+                LADO B<br>
+            </span>
+        </a>
+
+        <nav class="navigation" aria-label="Menu do Lado B">
+            <a href="#fitas">As fitas</a>
+            <a href="#fotos">As fotos</a>
+            <a href="#placar">Placar do caos</a>
+        </nav>
+
+        <a href="index.html#inicio" class="header-button">
+            <i class="fa-solid fa-arrow-left"></i>
+            Voltar pro lado A
+        </a>
+
+    </header>
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+        <section class="b-hero" id="inicio">
+
+            <!-- Visor de câmera -->
+            <div class="b-viewfinder" aria-hidden="true">
+                <span class="vf-corner vf-tl"></span>
+                <span class="vf-corner vf-tr"></span>
+                <span class="vf-corner vf-bl"></span>
+                <span class="vf-corner vf-br"></span>
+
+                <div class="vf-rec"><i></i> REC <span id="recTimer">00:00:00</span></div>
+                <div class="vf-tr-info">FITA B</div>
+                <div class="vf-bl-info">foco automático: falhou</div>
+                <div class="vf-br-info"><i class="fa-solid fa-battery-quarter"></i> 3%</div>
+            </div>
+
+            <div class="b-hero-tag">
+                <span></span>
+                Parabéns, você achou o segredo
+            </div>
+
+            <h1 class="b-title" aria-label="Lado B do Transforme-se">
+                <span class="b-line-outline">LADO</span>
+                <span class="b-line-main" id="bigB">B</span>
+                <span class="b-line-small">do Transforme-se</span>
+            </h1>
+
+            <div class="b-hero-content">
+                <p class="b-hero-description">
+                    Aqui não tem Figma, commit bonito nem "prezados". Só a turma
+                    em queimas e fazendo o que não dava
+                    pra colocar no portfólio sério.
+                </p>
+
+                <div class="b-hero-actions">
+                    <a href="#fitas" class="primary-button b-primary">
+                        Descer pro caos
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <button type="button" class="b-ghost" id="dontClick">
+                        Não clique
+                    </button>
+                </div>
+            </div>
+
+            <div class="b-stickers" aria-hidden="true">
+                <div class="b-sticker b-sticker-1">kkkkkkkkk</div>
+                <div class="b-sticker b-sticker-2">sem filtro</div>
+                <div class="b-sticker b-sticker-3">off the record</div>
+            </div>
+
+        </section>
+
+        <!-- ================= FAIXA ================= -->
+        <section class="marquee b-marquee" aria-label="Frases do Lado B">
+            <div class="marquee-content" id="marqueeContent"></div>
+        </section>
+
+        <!-- ================= VÍDEOS ================= -->
+        <section class="section b-section b-tapes" id="fitas">
+
+            <div class="section-heading section-heading-light">
+                <h2>
+                    AS FITAS<br>
+                    <span>ACHADAS</span>
+                </h2>
+            </div>
+
+            <p class="b-section-intro">
+                Gravadas sem roteiro, sem tripé e quase sempre sem saber quem
+                estava filmando. Aperte o play por sua conta e risco.
+            </p>
+
+            <div class="tape-grid" id="tapeGrid">
+                <!-- Gerado via JavaScript a partir do array "videos" -->
+            </div>
+
+        </section>
+
+        <!-- ================= FOTOS ================= -->
+        <section class="section b-section b-photos" id="fotos">
+
+            <div class="section-heading">
+                <h2>
+                    PROVAS<br>
+                    <span>DO CRIME</span>
+                </h2>
+            </div>
+
+            <p class="b-section-intro b-section-intro-dark">
+                Nenhuma dessas fotos passou por revisão de código. Clique em
+                qualquer uma pra ver de perto e tentar lembrar quem teve a
+                ideia.
+            </p>
+
+            <div class="polaroid-wall" id="polaroidWall">
+                <!-- Gerado via JavaScript a partir do array "fotos" -->
+            </div>
+
+        </section>
+
+        <!-- ================= PLACAR ================= -->
+        <section class="section b-section b-score" id="placar">
+
+            <div class="section-heading section-heading-light">
+                <h2>
+                    PLACAR<br>
+                    <span>DO CAOS</span>
+                </h2>
+            </div>
+
+            <div class="score-grid">
+
+                <article class="b-stat">
+                    <strong data-count="999" data-suffix="+">0</strong>
+                    <span>kkkkk mandados no grupo da turma</span>
+                </article>
+
+                <article class="b-stat">
+                    <strong data-count="0">0</strong>
+                    <span>fotos sem ninguém de olho fechado</span>
+                </article>
+
+                <article class="b-stat">
+                    <strong data-count="100" data-suffix="%">0</strong>
+                    <span>de chance de alguém começar a cantar</span>
+                </article>
+
+                <article class="b-stat">
+                    <strong data-count="2">0</strong>
+                    <span>docentes que aguentaram a gente</span>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ================= FINAL ================= -->
+        <section class="b-outro">
+
+            <h2>
+                AGORA FECHA<br>
+                ESSA ABA E<br>
+                FINGE QUE<br>
+                NÃO VIU.
+            </h2>
+
+            <div class="b-outro-actions">
+                <a href="index.html#inicio" class="primary-button b-primary b-primary-light">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Voltar pro lado A
+                </a>
+                <a href="mural.html" class="b-ghost b-ghost-light">
+                    Ver o mural da turma
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Lightbox das fotos (usa o estilo do lightbox do site) -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar foto">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="lightbox-frame">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <strong>140</strong>
+            <span>Lado B</span>
+        </div>
+
+        <p>
+            O lado que não foi pro portfólio, mas foi pro coração.
+        </p>
+
+        <div class="footer-information">
+            <span>Transforme-se</span>
+            <span>Front-end</span>
+            <span>2026</span>
+        </div>
+
+    </footer>
+
+    <script src="./lado-b.js"></script>
+
+</body>
+
+</html>
