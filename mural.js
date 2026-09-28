@@ -23,7 +23,7 @@
 const estudantes = [
     {
         nome: "Antonio Cézar",
-        foto: "./assets/images/cracha/antonio_cezar.jpeg",
+        foto: "./assets/images/cracha/antonio_cezar.png",
         papel: "",
         bio: "",
         tags: ["CSS", "Figma", "Grid"],
@@ -31,7 +31,7 @@ const estudantes = [
     },
     {
         nome: "Arthur Henrique",
-        foto: "./assets/images/cracha/arthur_henrrique.jpeg",
+        foto: "./assets/images/cracha/arthur_henrrique.png",
         papel: "",
         bio: "",
         tags: ["JS", "Git", "VS Code"],
@@ -39,7 +39,7 @@ const estudantes = [
     },
     {
         nome: "Carlos Eduardo",
-        foto: "./assets/images/cracha/carlos_eduardo.jpeg",
+        foto: "./assets/images/cracha/carlos_eduardo.png",
         papel: "",
         bio: "",
         tags: ["React", "UI"],
@@ -47,7 +47,7 @@ const estudantes = [
     },
     {
         nome: "Calebe de Araujo",
-        foto: "./assets/images/cracha/calebe_araujo.jpeg",
+        foto: "./assets/images/cracha/calebe_araujo.png",
         papel: "",
         bio: "",
         tags: ["CSS", "Figma"],
@@ -55,7 +55,7 @@ const estudantes = [
     },
     {
         nome: "Cecília Souza",
-        foto: "./assets/images/cracha/cecilia_souza.jpeg",
+        foto: "./assets/images/cracha/cecilia_souza.png",
         papel: "Design / UI/UX",
         bio: "Descobriu que criar um Design System resolve 90% dos problemas que o 'layout livre' criou. Ainda ama a liberdade de rabiscar.",
         tags: ["Figma", "Ilustrator", "Canva"],
@@ -63,7 +63,7 @@ const estudantes = [
     },
     {
         nome: "Clistian Jose",
-        foto: "./assets/images/cracha/clistian_jose.jpeg",
+        foto: "./assets/images/cracha/clistian_jose.png",
         papel: "Q.A. (Quality Assurance)",
         bio: "Descobriu que automatizar os testes resolve 90% dos problemas que o teste manual não dava conta. Ainda ama achar bug em produção.",
         tags: ["Cypress / Playwright", "Postman"],
@@ -71,7 +71,7 @@ const estudantes = [
     },
     {
         nome: "Daniel Pereira",
-        foto: "./assets/images/cracha/daniel_pereira.jpeg",
+        foto: "./assets/images/cracha/daniel_pereira.png",
         papel: "",
         bio: "",
         tags: ["HTML", "a11y"],
@@ -79,7 +79,7 @@ const estudantes = [
     },
     {
         nome: "Dayseane Karla",
-        foto: "./assets/images/cracha/dayseane_karla.jpeg",
+        foto: "./assets/images/cracha/dayseane_karla.png",
         papel: "",
         bio: "",
         tags: ["JS", "API"],
@@ -92,7 +92,7 @@ const estudantes = [
 
     {
         nome: "DÉBORA VITÓRIA",
-        foto: "./assets/images/cracha/debora_vitoria.jpeg",
+        foto: "./assets/images/cracha/debora_vitoria.png",
         papel: "",
         bio: "",
         tags: ["CSS", "Figma", "Grid"],
@@ -100,7 +100,7 @@ const estudantes = [
     },
     {
         nome: "EFRAIM FLAVIO",
-        foto: "./assets/images/cracha/efraim_flavio.jpeg",
+        foto: "./assets/images/cracha/efraim_flavio.png",
         papel: "",
         bio: "",
         tags: ["JS", "Git", "VS Code"],
@@ -108,7 +108,7 @@ const estudantes = [
     },
     {
         nome: "EMMANUEL HENRIQUE",
-        foto: "./assets/images/cracha/emanuel_henrrique.jpeg",
+        foto: "./assets/images/cracha/emanuel_henrrique.png",
         papel: "Design / UI/UX",
         bio: "Descobriu que regras de usabilidade estruturam o produto. Ainda ama a tela em branco e o caos controlado de um bom rascunho.",
         tags: ["Figma", "Canva", "CSS"],
@@ -116,7 +116,7 @@ const estudantes = [
     },
     {
         nome: "FÁBIO ARAÚJO",
-        foto: "./assets/images/cracha/fabio_araujo.jpeg",
+        foto: "./assets/images/cracha/fabio_araujo.png",
         papel: "",
         bio: "",
         tags: ["CSS", "Figma"],
@@ -124,7 +124,7 @@ const estudantes = [
     },
     {
         nome: "JOÃO ARTHUR",
-        foto: "./assets/images/cracha/joao_arthur.jpeg",
+        foto: "./assets/images/cracha/joao_arthur.png",
         papel: "Front-end",
         bio: "Descobriu que aprender JavaScript puro resolve 90% dos problemas que os frameworks criaram. Ainda ama o React.",
         tags: ["JavaScript", "React", "CSS / Tailwind"],
@@ -132,7 +132,7 @@ const estudantes = [
     },
     {
         nome: "JOSUÉ LUIZ",
-        foto: "./assets/images/cracha/josue_luiz.jpeg",
+        foto: "./assets/images/cracha/josue_luiz.png",
         papel: "",
         bio: "",
         tags: ["CSS", "JS"],
@@ -140,7 +140,7 @@ const estudantes = [
     },
     {
         nome: "JOYCE KELLY",
-        foto: "./assets/images/cracha/joyce_kelly.jpeg",
+        foto: "./assets/images/cracha/joyce_kelly.png",
         papel: "",
         bio: "",
         tags: ["HTML", "a11y"],
@@ -148,7 +148,7 @@ const estudantes = [
     },
     {
         nome: "LETÍCIA ROSA",
-        foto: "./assets/images/cracha/leticia_rosa.jpeg",
+        foto: "./assets/images/cracha/leticia_rosa.png",
         papel: "",
         bio: "",
         tags: ["JS", "API"],
@@ -160,7 +160,7 @@ const estudantes = [
 
     {
         nome: "LUIZ FELIPE",
-        foto: "./assets/images/cracha/luiz_felipe.jpeg",
+        foto: "./assets/images/cracha/luiz_felipe.png",
         papel: "",
         bio: "",
         tags: ["CSS", "Figma", "Grid"],
@@ -168,7 +168,7 @@ const estudantes = [
     },
     {
         nome: "MARIA EDUARDA",
-        foto: "./assets/images/cracha/maria_eduarda.jpeg",
+        foto: "./assets/images/cracha/maria_eduarda.png",
         papel: "",
         bio: "",
         tags: ["JS", "Git", "VS Code"],
@@ -176,7 +176,7 @@ const estudantes = [
     },
     {
         nome: "MATHEUS BEZERRA ",
-        foto: "./assets/images/cracha/matheus_bezerra.jpeg",
+        foto: "./assets/images/cracha/matheus_bezerra.png",
         papel: "Frpmt-End",
         bio: "Descobriu que tipar tudo com TypeScript resolve 90% dos problemas que os erros em tempo de execução e undefined criaram. Aindaama ver a interface ganhando vida na tela.",
         tags: ["React_native", "TypeScript", "Tailwind CSS"],
@@ -184,7 +184,7 @@ const estudantes = [
     },
     {
         nome: "MATHEUS GUILHERME",
-        foto: "./assets/images/cracha/matheus_guilherme.jpeg",
+        foto: "./assets/images/cracha/matheus_guilherme.png",
         papel: "Back-End",
         bio: "Descobriu que otimizar as queries do banco resolve 90% dos problemas que a arquitetura de microserviços criou. Ainda ama criar APIs.",
         tags: ["Node.js", "postegreSQL", "Java"],
@@ -192,7 +192,7 @@ const estudantes = [
     },
     {
         nome: "NICOLAS KLAYVERT",
-        foto: "./assets/images/cracha/nicolas_klayvert.jpeg",
+        foto: "./assets/images/cracha/nicolas_klayvert.png",
         papel: "",
         bio: "",
         tags: ["Git", "GitHub"],
@@ -200,7 +200,7 @@ const estudantes = [
     },
     {
         nome: "PEDRO FELIPE",
-        foto: "./assets/images/cracha/pedro_felipe.jpeg",
+        foto: "./assets/images/cracha/pedro_felipe.png",
         papel: "Full-stack",
         bio: "Descobriu que tratar o estado no frontend resolve 90% dos problemas de re-renderização que o React criou. Ainda ama subir APIs e ver a tela renderizar sem bug.",
         tags: ["Node.js", "Mongodb", "React"],
@@ -208,7 +208,7 @@ const estudantes = [
     },
     {
         nome: "RAFFAELA GALDINO",
-        foto: "./assets/images/cracha/raffaela_galdinho.jpeg",
+        foto: "./assets/images/cracha/raffaela_galdinho.png",
         papel: "Docuemntação",
         bio: "Resolvendo 90% dos ruídos de produto com jornadas visuais no Miro e UX Docs bem estruturados. Apaixonado por transformar processos complexos em fluxos simples.",
         tags: ["Miro", "Docs"],
@@ -216,7 +216,7 @@ const estudantes = [
     },
     {
         nome: "RAY ENIO",
-        foto: "./assets/images/cracha/ray_enio.jpeg",
+        foto: "./assets/images/cracha/ray_enio.png",
         papel: "Q.A. (Quality Assurance)",
         bio: "Gosta de encontrar problemas antes que eles cheguem ao usuário. Curioso, atento aos detalhes e sempre buscando aprender novas formas de testar, identificar bugs e melhorar a qualidade dos sistemas.",
         tags: ["Vitest", "Postman", "Jest / Cypress"],
@@ -235,7 +235,7 @@ const estudantes = [
     },
     {
         nome: "VITOR GABRIEL",
-        foto: "./assets/images/cracha/vitor_gabriel.jpeg",
+        foto: "./assets/images/cracha/vitor_gabriel.png",
         papel: "",
         bio: "",
         tags: ["JS", "Git", "VS Code"],
@@ -243,7 +243,7 @@ const estudantes = [
     },
     {
         nome: "WILTON GABRIEL",
-        foto: "./assets/images/cracha/wilton_gabriel.jpeg",
+        foto: "./assets/images/cracha/wilton_gabriel.png",
         papel: "",
         bio: "",
         tags: ["React", "UI"],
@@ -251,7 +251,7 @@ const estudantes = [
     },
     {
         nome: "YAN MATHEUS (shoyu)",
-        foto: "./assets/images/cracha/yan_mathues.jpeg",
+        foto: "./assets/images/cracha/yan_mathues.png",
         papel: "",
         bio: "",
         tags: ["CSS", "Figma"],
@@ -259,7 +259,7 @@ const estudantes = [
     },
     {
         nome: "YANA CLARA",
-        foto: "./assets/images/cracha/yana_clara.jpeg",
+        foto: "./assets/images/cracha/yana_clara.png",
         papel: "Design / Cybersecurity",
         bio: "Gosta de transformar ideias em algo visual , ao mesmo tempo, explorar o universo da segurança digital e entender como proteger a tecnologia por trás de tudo.",
         tags: ["Canva", "Figma", "NMAP"],
@@ -267,7 +267,7 @@ const estudantes = [
     },
     {
         nome: "YANCO VINICIUS",
-        foto: "./assets/images/cracha/yanco_vinicius.jpeg",
+        foto: "./assets/images/cracha/yanco_vinicius.png",
         papel: "",
         bio: "",
         tags: ["CSS", "JS"],
