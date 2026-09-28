@@ -227,7 +227,7 @@ const estudantes = [
 
     {
         nome: "THIAGO FILIPE",
-        foto: "./assets/images/cracha/thiago_felipe.jpeg",
+        foto: "./assets/images/cracha/thiago_felipe.png",
         papel: "",
         bio: "",
         tags: ["CSS", "Figma", "Grid"],
